@@ -1,10 +1,25 @@
-const http = require("http");
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {"Content-Type":"text/plain"});
-    res.end("Hello world!");
-});
+const path = require('path');
+const fs = require("fs");
 
-const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => console.log("Server is running on PORT 3000"));
+const app = express();
+
+app.use(
+    express.json(),
+    express.urlencoded({
+      extended: true,
+    })
+  );
+  app.use(express.static(path.join(__dirname, 'FrontEnd')));
+
+  app.get('/', (req, res) => {
+  
+    res.sendFile(path.join(__dirname, 'FrontEnd', 'WelcomePage.html'));
+    
+  });
+  const PORT = process.env.PORT || 3000
+  app.listen(PORT, () => {
+    console.log("Example app listening on port 3000");
+  });
