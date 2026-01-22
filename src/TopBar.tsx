@@ -10,7 +10,7 @@ function TopBar() {
             <div>
                 <p style={{fontWeight: 'bold', fontSize: '2em'}}>Louay Helou</p>
             </div>
-            <div style={{display: 'flex', alignItems: 'center', gap: '15px', fontSize: '1.3em'}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: '15px', fontSize: '1.3em', paddingTop: '5px'}}>
                 <p>Home</p>
                 <p>About</p>
                 <p>Skills</p>

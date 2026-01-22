@@ -4,10 +4,12 @@ import './index.css'
 import Home from './home.tsx'
 import App from './App.tsx'
 import TopBar from './TopBar.tsx'
+import Landing from './Landing.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <TopBar />
+    <Landing />
     <Home/>
     <App />
   </StrictMode>,
