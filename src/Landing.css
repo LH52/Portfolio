@@ -6,7 +6,7 @@
   animation: scroll 100s linear infinite;
   background: url(".\assets\LandingBG.avif"),#111111;
   color: #eee;
-  height: 80vh;
+  height: 90vh;
   min-width: 360px;
   width: 100%;
   display: flex;

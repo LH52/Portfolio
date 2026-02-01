@@ -1,5 +1,5 @@
 #home{
-    background-color: white;
+    background-color: #242424;
     width:100%;
 
     
@@ -9,14 +9,15 @@
     font-size: 20px;
     text-align: left;
     margin-top: 0px;
-    color:black;
+    color:white;
     display: flex;
     gap:50px;
     height:100%;
     align-items: flex-start;
     justify-content: space-between;
     padding: 30px 10% 30px 5%;
-    
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
 }
 
 .face {
